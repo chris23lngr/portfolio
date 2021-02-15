@@ -1,2 +1,0 @@
-# portfolio
- A personla portfolio

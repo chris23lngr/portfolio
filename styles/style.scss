@@ -1,0 +1,65 @@
+@import "./vars";
+@import "./includes";
+@import "./welcome";
+@import "./_projects.scss";
+
+body {
+
+    * {
+        @include a-no-margin-padding();
+    }
+
+}
+
+html {
+
+    font-size: 100%;
+
+    *.t-headline {
+
+        font-family: 'Archivo';
+        color: $primary;
+        font-size: 8.5em;
+        font-weight: 700;
+        max-width: 700px;
+
+    }
+
+    *.t-subline {
+
+        @include a-small-spacer();
+
+        font-family: 'Work Sans';
+        color: $secondary;
+        font-size: 2.5em;
+        font-weight: 400;
+        max-width: 600px;
+    }
+
+    *.t-highlight {
+        color: $accent;
+    }
+
+    span.l-break::before {
+        content: "\A";
+        white-space: pre;
+    }
+
+    img {
+
+        &.item-arrow {
+            @include arrow-down();
+        }
+
+        &.a-floating {
+            @include floating();
+        }
+
+    }
+
+    *.timestamp {
+        @include a-no-margin-padding();
+        @include timestamp();
+    }
+
+}

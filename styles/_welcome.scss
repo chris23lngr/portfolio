@@ -1,0 +1,22 @@
+@import "./vars";
+@import "./includes";
+
+
+section.s-welcome {
+    @extend section;
+
+    hr {
+        @include hr(40vw);
+    }
+
+    div.item-wrapper {
+        height: auto;
+        width: auto;
+        position: absolute;
+        bottom: $bottom;
+        right: $left-right;
+
+        @include floating();
+    }
+
+}

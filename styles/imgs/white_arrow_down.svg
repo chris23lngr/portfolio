@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="189" viewBox="0 0 66 189">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-white_arrow_down);
+      }
+
+      .cls-2 {
+        fill: rgba(210,158,158,0);
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-linecap: square;
+      }
+    </style>
+    <clipPath id="clip-white_arrow_down">
+      <rect width="66" height="189"/>
+    </clipPath>
+  </defs>
+  <g id="white_arrow_down" class="cls-1">
+    <g id="jonas.work-_-.travel" data-name="jonas.work-/-.travel" transform="translate(66.169 188.276) rotate(180)">
+      <g id="_.work-Detailseite" data-name=".work-Detailseite" transform="translate(1.404 2.119)">
+        <g id="Group-4" transform="translate(0)">
+          <path id="Path-3" class="cls-2" d="M64.765,33.582,32.383,0,0,33.582"/>
+          <line id="Line" class="cls-3" y1="182.816" transform="translate(32.383 3.341)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
