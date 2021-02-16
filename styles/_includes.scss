@@ -121,27 +121,29 @@ section {
 
     }
 
+    /*
     div {
 
         &.snap__wrapper {
-
-            overflow-y: scroll;
-
             background: yellow;
 
+            scroll-snap-type: y mandatory;
+
+
             ._snapper__child {
+
+                scroll-snap-align: start;
+                background-color: darkblue;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-
-                background-color: green;
 
             }
 
         }
 
     }
+    */
 
 }
