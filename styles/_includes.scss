@@ -22,6 +22,10 @@
 }
 
 @mixin i-backgrounded {
+    position: absolute;
+}
+
+@mixin i-fitted {
     height: 100vh;
     position: absolute;
     right: 0;
@@ -96,12 +100,47 @@ section {
     min-height: calc(100vh - 240px);
 
     img {
-        @include i-backgrounded();
+
+        &.i__backgrounded {
+            @include i-backgrounded();
+        }
+
+        &.i__fitted {
+            @include i-fitted();
+        }
+
     }
 
-    h2.timestamp {
+    h2 {
+    
+        &.t__timestamp {
 
-        @include timestamp();
+            @include timestamp();
+
+        }
+
+    }
+
+    div {
+
+        &.snap__wrapper {
+
+            overflow-y: scroll;
+
+            background: yellow;
+
+            ._snapper__child {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                background-color: green;
+
+            }
+
+        }
 
     }
 

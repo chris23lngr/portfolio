@@ -2,14 +2,14 @@
 @import "./includes";
 
 
-section.s-welcome {
+section.s__welcome {
     @extend section;
 
     hr {
         @include hr(40vw);
     }
 
-    div.item-wrapper {
+    div.item__wrapper {
         height: auto;
         width: auto;
         position: absolute;

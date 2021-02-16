@@ -22,7 +22,7 @@
   }
 }
 
-section, section.s-welcome, section.s-projects {
+section, section.s__welcome, section.s__projects {
   background-color: #FDFEFF;
   padding-top: 140px;
   padding-bottom: 100px;
@@ -31,7 +31,11 @@ section, section.s-welcome, section.s-projects {
   min-height: calc(100vh - 240px);
 }
 
-section img, section.s-welcome img, section.s-projects img {
+section img.i__backgrounded {
+  position: absolute;
+}
+
+section img.i__fitted {
   height: 100vh;
   position: absolute;
   right: 0;
@@ -39,7 +43,7 @@ section img, section.s-welcome img, section.s-projects img {
   z-index: 0;
 }
 
-section h2.timestamp {
+section h2.t__timestamp {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
@@ -49,6 +53,24 @@ section h2.timestamp {
   color: #2450FE;
   font-size: 7em;
   font-weight: 500;
+}
+
+section div.snap__wrapper {
+  overflow-y: scroll;
+  background: yellow;
+}
+
+section div.snap__wrapper ._snapper__child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: green;
 }
 
 @keyframes floating-animation {
@@ -63,7 +85,7 @@ section h2.timestamp {
   }
 }
 
-section, section.s-welcome, section.s-projects {
+section, section.s__welcome, section.s__projects {
   background-color: #FDFEFF;
   padding-top: 140px;
   padding-bottom: 100px;
@@ -72,7 +94,11 @@ section, section.s-welcome, section.s-projects {
   min-height: calc(100vh - 240px);
 }
 
-section img, section.s-welcome img, section.s-projects img {
+section img.i__backgrounded {
+  position: absolute;
+}
+
+section img.i__fitted {
   height: 100vh;
   position: absolute;
   right: 0;
@@ -80,7 +106,7 @@ section img, section.s-welcome img, section.s-projects img {
   z-index: 0;
 }
 
-section h2.timestamp {
+section h2.t__timestamp {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
@@ -92,13 +118,31 @@ section h2.timestamp {
   font-weight: 500;
 }
 
-section.s-welcome hr {
+section div.snap__wrapper {
+  overflow-y: scroll;
+  background: yellow;
+}
+
+section div.snap__wrapper ._snapper__child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: green;
+}
+
+section.s__welcome hr {
   margin-top: 50px;
   width: 40vw;
   border: 2px solid #EFEFEF;
 }
 
-section.s-welcome div.item-wrapper {
+section.s__welcome div.item__wrapper {
   height: auto;
   width: auto;
   position: absolute;
@@ -122,7 +166,7 @@ section.s-welcome div.item-wrapper {
   }
 }
 
-section, section.s-welcome, section.s-projects {
+section, section.s__welcome, section.s__projects {
   background-color: #FDFEFF;
   padding-top: 140px;
   padding-bottom: 100px;
@@ -131,7 +175,11 @@ section, section.s-welcome, section.s-projects {
   min-height: calc(100vh - 240px);
 }
 
-section img, section.s-welcome img, section.s-projects img {
+section img.i__backgrounded {
+  position: absolute;
+}
+
+section img.i__fitted {
   height: 100vh;
   position: absolute;
   right: 0;
@@ -139,7 +187,7 @@ section img, section.s-welcome img, section.s-projects img {
   z-index: 0;
 }
 
-section h2.timestamp {
+section h2.t__timestamp {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
@@ -151,32 +199,46 @@ section h2.timestamp {
   font-weight: 500;
 }
 
-section.s-projects {
-  background-color: red;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+section div.snap__wrapper {
+  overflow-y: scroll;
+  background: yellow;
+}
+
+section div.snap__wrapper ._snapper__child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: green;
+}
+
+section.s__projects {
   padding: 0;
   margin: 0;
+  min-height: 100vh;
 }
 
-section.s-projects ul li {
-  float: left;
-  display: block;
+section.s__projects div.project__preview {
+  height: 100vh;
 }
 
-section.s-projects ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
+section.s__projects div.project__super__cord {
+  background: pink;
 }
 
-section.s-projects ul div.project-showcase {
-  scroll-snap-align: start;
-  width: 80vw;
-  height: 80vh;
+section.s__projects div.project__super__interface {
+  background: blue;
+}
+
+body {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 body * {
@@ -186,9 +248,11 @@ body * {
 
 html {
   font-size: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-html *.t-headline {
+html *.t__headline {
   font-family: 'Archivo';
   color: #090909;
   font-size: 8.5em;
@@ -196,7 +260,7 @@ html *.t-headline {
   max-width: 700px;
 }
 
-html *.t-subline {
+html *.t__subline {
   margin-top: 50px;
   font-family: 'Work Sans';
   color: #3A3A3A;
@@ -205,21 +269,21 @@ html *.t-subline {
   max-width: 600px;
 }
 
-html *.t-highlight {
+html *.t_-highlight {
   color: #2450FE;
 }
 
-html span.l-break::before {
+html span.l__break::before {
   content: "\A";
   white-space: pre;
 }
 
-html img.item-arrow {
+html img.item__arrow {
   position: relative;
   height: 20vh;
 }
 
-html img.a-floating {
+html img.a__floating {
   -webkit-animation: floating-animation 3s;
           animation: floating-animation 3s;
   -webkit-animation-iteration-count: infinite;

@@ -9,13 +9,19 @@ body {
         @include a-no-margin-padding();
     }
 
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+
 }
 
 html {
 
     font-size: 100%;
+    padding: 0;
+    margin: 0;
 
-    *.t-headline {
+    *.t__headline {
 
         font-family: 'Archivo';
         color: $primary;
@@ -25,7 +31,7 @@ html {
 
     }
 
-    *.t-subline {
+    *.t__subline {
 
         @include a-small-spacer();
 
@@ -36,22 +42,22 @@ html {
         max-width: 600px;
     }
 
-    *.t-highlight {
+    *.t_-highlight {
         color: $accent;
     }
 
-    span.l-break::before {
+    span.l__break::before {
         content: "\A";
         white-space: pre;
     }
 
     img {
 
-        &.item-arrow {
+        &.item__arrow {
             @include arrow-down();
         }
 
-        &.a-floating {
+        &.a__floating {
             @include floating();
         }
 
