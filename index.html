@@ -3,72 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christoph Langer</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>>S - Christoph Langer</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
 
-    <div id="div__wrapper">
+    <div id="content-wrapper">
 
-        <div id="div__content">
+        <div id="navbar" class="normal">
 
-            <section class="s__welcome">
+            <ul id="navigation" class="navigation">
 
-                <h1 class="t__headline">
-                    Christoph
-                    <span class="l__break t__highlight">Langer</span>
-                </h1>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#myself">Myself</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
-                <h3 class="t__subline">
-                    — A german student with a fascination for technology and a love for detail.
-                </h3>
+            </ul>
 
-                <img class="i__fitted i__backgrounded" src="./styles/imgs/bg_s_welcome.jpg">
+        </div>
 
-                <hr>
+        <div id="content">
 
-                <h2 class="t__timestamp">2020</h2>
+            <!-- ################### LANDING #################### -->
+            <div class="__section section-landing" id="landing">
+                
+                <img data-parallax-speed="0.5" src="./assets/asset_headline_landing.png" class="headline">
+                <img data-parallax-speed="0.75" src="./assets/asset_cutted_landing.png" class="absolute landing-image">
 
-                <div class="item__wrapper">
-                    <img class="item__icon svg item_arrow floating" src="./styles/imgs/white_arrow_down.svg">
+                <div class="element-wrapper absolute">
+                    
+                    <a href="#work">
+
+                        <img data-parallax-speed="0.3" class="asset-scroll" src="./assets/asset_scroll_tilted.png">
+                        <div></div>
+                    </a>
+
                 </div>
 
+            </div>
+
+            <!-- ################### WORK #################### -->
+            <section class="__section section-work" id="work">
+                <h2>Work</h2>
             </section>
 
-            <section class="s__projects">
+            <!-- ################### MYSELF #################### -->
 
-                <div class="snap__wrapper">
+            <section class="__section section-myself" id="myself">
+                <h2>myself</h2>
+            </section>
 
-                    <div class="project__preview project-1 _snapper__child">
-                        <div class="headline__wrapper">
-                            <h2 class="t__headline">Super Cloud</h2>
-                            <hr>
-                        </div>
+            <!-- ################### CONTACT #################### -->
 
-
-                        <div class="image__container">
-
-                        </div>
-
-                        <h2 class="t__timestamp">2020</h2>
-
-                    </div>
-    
-                    <div class="project__preview project-2 _snapper__child">
-                        <h2>Super-Cloud 2</h2>
-                    </div>
-    
-                    <div class="project__preview project-3 _snapper__child">
-                        <h2>Super-Cloud 3</h2>
-                    </div>
-
-                </div>
-
+            <section class="__section section-contact" id="contact">
+                <h2>contact</h2>
             </section>
 
         </div>
 
+        <!-- ################### FOOTER #################### -->
+        <footer id="footer" class=" footer">
+
+            <div class="footer-content">
+                <ul>
+                    <li>
+                        <div class="li-wrapper logo">
+                            <h3 class="footer-headline">Logo</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-wrapper">
+                            <h3 class="footer-headline">Logo</h3>
+                            <a href="">Link 1</a><br>
+                            <a href="">Link 1</a><br>
+                            <a href="">Link 1</a><br>
+                            <a href="">Link 1</a><br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-wrapper">
+                            <h3 class="footer-headline">Logo</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-wrapper">
+                            <h3 class="footer-headline">Logo</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
     </div>
-    
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script async src="./scripts/parallax.js"></script>
+        <script async src="./scripts/navigation.js"></script>
+
+    </script>
+
 </body>
 </html>

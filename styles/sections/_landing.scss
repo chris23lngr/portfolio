@@ -1,0 +1,65 @@
+@import "../vars";
+@import "../includes";
+
+div#landing {
+
+    @extend section;
+
+    img {
+
+        &.headline {
+
+            z-index: 7;
+
+            width: 45vw;
+
+        }
+
+        &.landing-image {
+
+
+            z-index: 2;
+
+            right: $padding-right;
+            top: 150px;
+            width: 30vw;
+
+        }
+
+    }
+
+    div {
+
+        &.element-wrapper {
+
+            right: 0;
+            top: 45vh;
+
+            img {
+                width: 50px;
+            }
+
+            div {
+
+                margin-top: 10px;
+                margin-left: 22.5px;
+                width: 5px;
+                height: 90px;
+
+                background-color: $primary;
+
+                transition: height .4s;
+            }
+
+            &:hover {
+
+                div {
+                    height: 160px;
+                }
+
+            }
+
+        }
+
+    }
+}

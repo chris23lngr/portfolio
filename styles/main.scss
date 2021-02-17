@@ -1,0 +1,53 @@
+@import "./vars";
+@import "./includes";
+
+html {
+
+    scroll-behavior: smooth;
+
+    * {
+        padding: 0;
+        margin: 0;
+
+        background-color:unset;
+
+        scroll-behavior: smooth;
+    }
+
+    body {
+
+        background: url('../assets/asset_background.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        div#content-wrapper {
+            background-color: unset;
+        }
+
+        div#content {
+
+            padding: 0 $padding-right 0 $padding-left;
+
+        }
+
+        *.__section {
+            @extend section;
+        }
+
+        *.absolute {
+            position: absolute;
+        }
+    
+    }
+
+}
+
+@import "./sections/nav";
+
+@import "./sections/landing";
+@import "./sections/work";
+@import "./sections/myself";
+@import "./sections/contact";
+@import "./sections/footer";

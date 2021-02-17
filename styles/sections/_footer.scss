@@ -1,0 +1,74 @@
+footer {
+
+    min-height: 200px;
+    height: 100%;
+
+    background-color: $primary;
+    position: relative;
+
+    div {
+
+        &.footer-content {
+
+            height: inherit;
+
+            padding-left: $padding-left;
+            padding-right: $padding-right;
+
+
+            ul {
+
+                height: inherit;
+                background-color: red;
+                list-style-type: none;
+
+                li {
+
+                    float: left;
+                    
+                    height: inherit;
+                    width: 100% * 0.25;
+
+                    background-color: green;
+
+
+                    div {
+
+                        &.li-wrapper {
+
+                            padding: 40px;
+
+                            * {
+                                width: 100%;
+                            }
+
+                            h3 {
+
+                                &.footer-headline {
+
+                                    font-family: 'Archivo';
+                                    font-weight: 500;
+                                    color: $whey;
+                                    font-size: 30px;
+
+                                    margin-bottom: 30px;
+
+                                }
+
+                            }
+
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+

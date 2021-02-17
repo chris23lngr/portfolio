@@ -1,149 +1,15 @@
-@mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin a-no-margin {
-    margin: 0;
-}
-
-@mixin a-no-padding {
-    padding: 0;
-}
-
-@mixin a-no-margin-padding {
-    @include a-no-margin();
-    @include a-no-padding();
-}
-
-@mixin a-small-spacer {
-    margin-top: 50px;
-}
-
-@mixin i-backgrounded {
-    position: absolute;
-}
-
-@mixin i-fitted {
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-}
-
-@mixin hr($width) {
-
-    @include a-small-spacer();
-
-    width: $width;
-    border: 2px solid $whey;
-}
-
-@mixin rotated-left {
-    transform: rotate(-90deg);
-}
-
-@mixin timestamp {
-
-    @include rotated-left();
-    
-    position: absolute;
-
-    top: $top;
-    right: 90px;
-
-    font-family: 'Archivo';
-    color: $accent;
-    font-size: 7em;
-    font-weight: 500;
-
-}
-
-@mixin arrow-down {
-    
-    position: relative;
-    height: 20vh;
-
-}
-
-@mixin floating {
-    animation: floating-animation 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes floating-animation {
-
-    0% {
-        bottom: $bottom;
-    }
-
-    50% {
-        bottom: $bottom + 50px;
-    }
-    100% {
-        bottom: $bottom;
-    }
-}
-
+@import "./vars";
 
 section {
 
-    background-color: $background;
+    height: 100vh;
+    width: 100%;
 
-    padding-top: $top;
-    padding-bottom: $bottom;
-    padding-left: $left-right;
-    padding-right: $left-right;
+    padding-top: 17.5vh;
 
-    min-height: calc(100vh - 240px);
+    background: unset;
+    background-color: unset;
 
-    img {
-
-        &.i__backgrounded {
-            @include i-backgrounded();
-        }
-
-        &.i__fitted {
-            @include i-fitted();
-        }
-
-    }
-
-    h2 {
-    
-        &.t__timestamp {
-
-            @include timestamp();
-
-        }
-
-    }
-
-    /*
-    div {
-
-        &.snap__wrapper {
-            background: yellow;
-
-            scroll-snap-type: y mandatory;
-
-
-            ._snapper__child {
-
-                scroll-snap-align: start;
-                background-color: darkblue;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-            }
-
-        }
-
-    }
-    */
+    position: relative;
 
 }
