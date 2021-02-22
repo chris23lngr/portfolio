@@ -1,0 +1,16 @@
+@import "../styles/vars";
+
+.hidden {
+    animation: hide-text .4s;
+    opacity: 0;
+}
+
+.visible {
+
+    color: $accent;
+    background-image: linear-gradient(120deg, $accent-lighted 0%, $accent-lighted 100%);
+    background-repeat: no-repeat;
+    background-position: 0 88%;
+    background-size: 50% 0.35em;
+
+}

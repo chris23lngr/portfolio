@@ -1,8 +1,16 @@
 $primary : #090909;
-$secondary : #3A3A3A;
-$detail : #5D5D5D;
+$secondary : #6A6A6A;
+$detail : #E1E1E1;
 $whey : #EFEFEF;
-$accent : #0033FF;
 
-$padding-left : 150px;
-$padding-right : 150px;
+$accent : #FDCD07;
+$accent-lighted : #fff1b8;
+
+$light-accent : #F3ECC7;
+
+$padding-left-right : 500px;
+
+$padding-left : $padding-left-right / 2;
+$padding-right : $padding-left-right / 2;
+
+$margin-top: 200px;

@@ -1,53 +1,49 @@
-@import "./vars";
-@import "./includes";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
 
-html {
+@import "./vars";
+@import "./global";
+@import "../boiler/default";
+
+@import "./pages/home/landing";
+@import "../work/work";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+::-webkit-scrollbar
+{
+	width: 0;
+}*/
+
+.wrapper {
 
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 
-    * {
-        padding: 0;
-        margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-        background-color:unset;
+    max-height: 100vh;
 
-        scroll-behavior: smooth;
-    }
+    .container, .container-fluid {
 
-    body {
 
-        background: url('../assets/asset_background.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        &.section-container {
 
-        div#content-wrapper {
-            background-color: unset;
-        }
+            scroll-snap-align: start;
 
-        div#content {
-
-            padding: 0 $padding-right 0 $padding-left;
-
-        }
-
-        *.__section {
-            @extend section;
-        }
-
-        *.absolute {
-            position: absolute;
-        }
+            width: 100%;
+            height: 100vh;
     
+            .row {
+                height: 100%;
+            }
+
+        }
+        
     }
 
 }
-
-@import "./sections/nav";
-
-@import "./sections/landing";
-@import "./sections/work";
-@import "./sections/myself";
-@import "./sections/contact";
-@import "./sections/footer";

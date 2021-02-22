@@ -1,0 +1,61 @@
+@import "../../vars";
+
+/*
+div {
+
+    &#progress-wrapper {
+
+        top: 100vh / 2;
+
+        right: $padding-right;
+        height: 340px;
+        width: 40px;
+        background-color: yellowgreen;
+
+        h3 {
+            width: inherit;
+            font-size: 20px;
+            font-family: 'Work Sans';
+        }
+
+        div {
+
+            &.outer-progress {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 6px;
+                width: 7.5px;
+                height: 250px;
+                background-color: black;
+                position: relative;
+
+                div {
+
+                    &#progress {
+
+                        background-color: $detail;
+                        width: inherit;
+                        height: 125px;
+                        position: absolute;
+
+
+                        &.normal {
+                            top: 0;
+                        }
+
+                        &.progressed {
+                            bottom: 0;
+                        }
+
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
+
+}
+*/

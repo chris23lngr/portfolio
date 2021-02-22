@@ -1,0 +1,115 @@
+*.fixed {
+    position: fixed;
+}
+
+*.section {
+    height: 100vh;
+    width: 100%;
+}
+
+*.no-padding {
+    padding: 0;
+}
+
+*.no-margin {
+    margin: 0;
+}
+
+*.fitted {
+    width: 100%;
+    height: 100%;
+}
+
+*.dimension-bg {
+    background-image: url('../assets/landing_background.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #FFFFFF;
+}
+
+*.text {
+
+    color: $primary;
+    font-family: 'Work Sans';
+    text-transform: lowercase;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    //animation: text-flow-in 1s ease;
+    will-change: opacity;
+
+    &.headline {
+
+        display: block;
+
+        font-size: calc(4vw + 3vh);
+        font-weight: 600;
+
+        &.linkable-headline {
+
+            transition: color 0.5s ease-in-out, background-size 0.5s ease-in-out;
+
+            background-image: linear-gradient(120deg, $accent-lighted 0%, $accent-lighted 100%);
+            background-repeat: no-repeat;
+            background-position: 0 88%;
+            background-size: 0% 0.35em;
+
+            &:hover {
+                background-size: 50% 0.35em;
+
+                color: $accent;
+            }
+
+        }
+
+    }
+
+    &.subline {
+        color: $secondary;
+        font-size: calc(3vw + 2vh);
+        font-weight: 400;
+    }
+
+    &.use-introducer {
+
+        &::before {
+    
+            content: "\a0";
+            float: left;
+            width: 250px;
+            height: 5px;
+            background: $secondary;
+            margin-right: 30px;
+    
+        }
+    }
+
+    &.footer-headline {
+        margin-bottom: 30px;
+    }
+
+    &.footer-link {
+
+        color: $secondary;
+        transition: color .3s;
+
+        &:hover {
+            color: $accent;
+        }
+
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
