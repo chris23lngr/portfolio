@@ -7,6 +7,8 @@ I have always had new designs and ideas for a personal portfolio, but have never
 
 This time, however, I really finished my project and published it.
 
+<br>
+
 ###### These are the things I used to construct my website:
 <code><img height="20" src="https://raw.githubusercontent.com/chris23lngr/chris23lngr/main/assets/icons/bootstrap.png">
 <img height="20" src="https://raw.githubusercontent.com/chris23lngr/chris23lngr/main/assets/icons/html.png">
