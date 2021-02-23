@@ -2,21 +2,17 @@
 
 @import "./vars";
 @import "./global";
-@import "../boiler/default";
-
-@import "./pages/home/landing";
-@import "../work/work";
+@import "../defaults/default";
 
 * {
     margin: 0;
     padding: 0;
 }
 
-/*
 ::-webkit-scrollbar
 {
 	width: 0;
-}*/
+}
 
 .wrapper {
 

@@ -52,7 +52,7 @@
   font-weight: 600;
 }
 
-*.text.headline.linkable-headline {
+*.text.headline.fancy-headline {
   -webkit-transition: color 0.5s ease-in-out, background-size 0.5s ease-in-out;
   transition: color 0.5s ease-in-out, background-size 0.5s ease-in-out;
   background-image: linear-gradient(120deg, #fff1b8 0%, #fff1b8 100%);
@@ -61,7 +61,15 @@
   background-size: 0% 0.35em;
 }
 
-*.text.headline.linkable-headline:hover {
+*.text.headline.fancy-headline:hover {
+  background-size: 50% 0.35em;
+  color: #FDCD07;
+}
+
+*.text.headline.fancy-headline-always {
+  background-image: linear-gradient(120deg, #fff1b8 0%, #fff1b8 100%);
+  background-repeat: no-repeat;
+  background-position: 0 88%;
   background-size: 50% 0.35em;
   color: #FDCD07;
 }
@@ -107,7 +115,7 @@ html body div.wrapper div.logo-wrapper {
 }
 
 html body div.wrapper div.page-header {
-  width: 50vw;
+  width: 40vw;
   height: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0%, rgba(255, 255, 255, 0)), to(#fff));
   background-image: linear-gradient(0, rgba(255, 255, 255, 0) 0%, #fff 100%);
@@ -116,81 +124,36 @@ html body div.wrapper div.page-header {
           animation: opacity-in .9s ease;
 }
 
+html body div.wrapper div.page-header h2, html body div.wrapper div.page-header a {
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  font-size: x-large;
+  position: relative;
+}
+
+html body div.wrapper div.page-header h2::before, html body div.wrapper div.page-header a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0px;
+  height: 3px;
+  margin: 5px 0 0;
+  opacity: 1;
+  background-color: #090909;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+html body div.wrapper div.page-header h2:hover, html body div.wrapper div.page-header a:hover {
+  color: #FDCD07;
+}
+
+html body div.wrapper div.page-header h2:hover::before, html body div.wrapper div.page-header a:hover::before {
+  width: 65%;
+}
+
 html body div.wrapper div.page-footer {
   height: 30vh !important;
-}
-
-/*
-div {
-
-    &#progress-wrapper {
-
-        top: 100vh / 2;
-
-        right: $padding-right;
-        height: 340px;
-        width: 40px;
-        background-color: yellowgreen;
-
-        h3 {
-            width: inherit;
-            font-size: 20px;
-            font-family: 'Work Sans';
-        }
-
-        div {
-
-            &.outer-progress {
-                margin-top: 20px;
-                margin-bottom: 20px;
-                margin-left: 6px;
-                width: 7.5px;
-                height: 250px;
-                background-color: black;
-                position: relative;
-
-                div {
-
-                    &#progress {
-
-                        background-color: $detail;
-                        width: inherit;
-                        height: 125px;
-                        position: absolute;
-
-
-                        &.normal {
-                            top: 0;
-                        }
-
-                        &.progressed {
-                            bottom: 0;
-                        }
-
-                    }
-
-
-                }
-
-            }
-        }
-
-    }
-
-}
-*/
-.hidden {
-  -webkit-animation: hide-text .4s;
-          animation: hide-text .4s;
-  opacity: 0;
-}
-
-.visible {
-  color: #FDCD07;
-  background-image: linear-gradient(120deg, #fff1b8 0%, #fff1b8 100%);
-  background-repeat: no-repeat;
-  background-position: 0 88%;
-  background-size: 50% 0.35em;
 }
 
 * {
@@ -198,11 +161,10 @@ div {
   padding: 0;
 }
 
-/*
-::-webkit-scrollbar
-{
-	width: 0;
-}*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .wrapper {
   scroll-behavior: smooth;
   -ms-scroll-snap-type: y mandatory;
