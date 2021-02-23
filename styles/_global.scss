@@ -28,6 +28,10 @@
     background-color: #FFFFFF;
 }
 
+*.no-scroll {
+    overflow: hidden;
+}
+
 *.text {
 
     color: $primary;
